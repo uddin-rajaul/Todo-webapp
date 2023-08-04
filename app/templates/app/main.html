@@ -8,7 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
     <title>To Do Item</title>
     <style>
+        * {
+            margin:0;
+            padding:0;
+        }
         body{
+
             background-color: #062925;
             font-family: 'Nunito Sans', sans-serif;
             padding-top: 50px;
@@ -26,7 +31,8 @@
         .container {
             max-width: 550px;
             margin: auto;
-            padding: 25px 50px 75px 100px;
+            {% comment %} padding: 25px 50px 75px 100px; {% endcomment %}
+            border-radius: 10px;
             background-color:#fff;
             box-shadow:
                 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -101,7 +107,7 @@
             font-size: 42px;
             text-shadow: 1px 1px #81413b;
         }
-        inout[type=text], input[type=password], textarea {
+        input[type=text], input[type=password], textarea {
             border: 1px solid #0A4D68;
             border-radius: 5px;
             padding: 10px;
@@ -119,6 +125,15 @@
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
+        }
+        .card-body {
+            padding: 10px;
+        }
+        .checkbox {
+            display: inline-flex;
+            align-items: center;
+            gap:10px;
+
         }
     </style>
 </head>

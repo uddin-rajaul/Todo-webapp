@@ -1,12 +1,24 @@
 {% extends 'app/main.html' %}
 
 {% block content %}
+<div class="header-bar">
+    <a href="{% url 'tasks' %}">&#8592; Back</a>
+</div>
 
-<h2>Task Form</h2>
-<a href="{% url 'tasks' %}">Go Back</a>
-<form method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" value= "Submit">
-</form>
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+        <label>{{form.title.label}}</label>
+        {{form.title}}
+        <label>{{form.description.label}}</label>
+        {{form.description}}
+        <div class='checkbox'>
+        <label>{{form.complete.label}}</label>
+        {{form.complete}}
+        </div>
+        <br>
+        <input class="button" type="submit" value= "Submit">
+    </form>
+</div>
+
 {% endblock content %}
