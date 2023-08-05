@@ -50,8 +50,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
+
+WHITENOISE_MIMETYPES = {
+    '.xsl': 'application/xml'
+}
 
 ROOT_URLCONF = 'todo.urls'
 
