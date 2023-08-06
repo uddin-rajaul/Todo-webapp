@@ -34,7 +34,6 @@
         .container {
             max-width: 550px;
             margin: auto;
-        
             border-radius: 10px;
             background-color:#fff;
             box-shadow:
@@ -44,7 +43,6 @@
                 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
                 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
                 0 100px 80px rgba(0, 0, 0, 0.12);
-                overflow-y: scroll;
         }
         .header-bar{
             display: flex;
@@ -66,11 +64,12 @@
             justify-content: space-between;
             padding: 20px;
             background-color: #fff;
+            
             border-top: 1px solid rgb(95, 115, 96);
-            height: 300px;
-            overflow-y: auto;
         }
         .task-title{
+            font-family: 'Nunito Sans', sans-serif;
+
             display: flex;
         }
         .task-title a {
@@ -141,24 +140,28 @@
             gap:10px;
         
         }
-        .task-wrapper::-webkit-scrollbar {
+        .task-items-wrapper {
+            height: 400px;
+            overflow-y: auto;
+        }
+        .task-items-wrapper::-webkit-scrollbar {
             width: 15px;
           }
           
           /* Track */
-        .task-wrapper::-webkit-scrollbar-track {
+        .task-items-wrapper::-webkit-scrollbar-track {
             box-shadow: inset 0 0 5px grey; 
             border-radius: 10px;
           }
            
           /* Handle */
-        .task-wrapper::-webkit-scrollbar-thumb {
+        .task-items-wrapper::-webkit-scrollbar-thumb {
             background: #199c72; 
             border-radius: 10px;
           }
           
           /* Handle on hover */
-        .task-wrapper::-webkit-scrollbar-thumb:hover {
+        .task-items-wrapper::-webkit-scrollbar-thumb:hover {
             background: #069165; 
           }
     </style>
