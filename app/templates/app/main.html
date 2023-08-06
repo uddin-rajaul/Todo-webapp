@@ -66,7 +66,9 @@
             justify-content: space-between;
             padding: 20px;
             background-color: #fff;
-            border-top: 1px solid rgb(95, 115, 96)
+            border-top: 1px solid rgb(95, 115, 96);
+            height: 300px;
+            overflow-y: auto;
         }
         .task-title{
             display: flex;
@@ -139,24 +141,24 @@
             gap:10px;
         
         }
-        .container::-webkit-scrollbar {
-            width: 20px;
+        .task-wrapper::-webkit-scrollbar {
+            width: 15px;
           }
           
           /* Track */
-        .container::-webkit-scrollbar-track {
+        .task-wrapper::-webkit-scrollbar-track {
             box-shadow: inset 0 0 5px grey; 
             border-radius: 10px;
           }
            
           /* Handle */
-        .container::-webkit-scrollbar-thumb {
+        .task-wrapper::-webkit-scrollbar-thumb {
             background: #199c72; 
             border-radius: 10px;
           }
           
           /* Handle on hover */
-        .container::-webkit-scrollbar-thumb:hover {
+        .task-wrapper::-webkit-scrollbar-thumb:hover {
             background: #069165; 
           }
     </style>
